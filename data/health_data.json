@@ -1,0 +1,135 @@
+{
+  "facilities": [
+    {
+      "id": "PHC-ALUVA",
+      "name": "PHC Aluva",
+      "state": "Kerala",
+      "district": "Ernakulam",
+      "beds_total": 28,
+      "beds_available": 8,
+      "staff_total": 19,
+      "staff_present": 17,
+      "status": "WATCH"
+    },
+    {
+      "id": "PHC-KOLAR",
+      "name": "PHC Kolar",
+      "state": "Madhya Pradesh",
+      "district": "Bhopal",
+      "beds_total": 35,
+      "beds_available": 19,
+      "staff_total": 23,
+      "staff_present": 20,
+      "status": "NORMAL"
+    },
+    {
+      "id": "PHC-SADAR",
+      "name": "PHC Sadar",
+      "state": "Uttar Pradesh",
+      "district": "Gorakhpur",
+      "beds_total": 40,
+      "beds_available": 3,
+      "staff_total": 25,
+      "staff_present": 19,
+      "status": "CRITICAL"
+    },
+    {
+      "id": "PHC-PINDRA",
+      "name": "PHC Pindra",
+      "state": "Uttar Pradesh",
+      "district": "Varanasi",
+      "beds_total": 24,
+      "beds_available": 13,
+      "staff_total": 17,
+      "staff_present": 14,
+      "status": "NORMAL"
+    },
+    {
+      "id": "PHC-SHIVPUR",
+      "name": "PHC Shivpur",
+      "state": "Uttar Pradesh",
+      "district": "Varanasi",
+      "beds_total": 30,
+      "beds_available": 4,
+      "staff_total": 21,
+      "staff_present": 18,
+      "status": "HIGH"
+    }
+  ],
+  "resources": [
+    {
+      "facility_id": "PHC-ALUVA",
+      "facility_name": "PHC Aluva",
+      "medicine": "ORS",
+      "current_stock": 820,
+      "daily_consumption": 72,
+      "safety_stock": 300,
+      "expiry_date": "2026-12-20",
+      "history": [60, 62, 65, 64, 68, 70, 72, 71, 73, 72, 75, 74, 76, 78]
+    },
+    {
+      "facility_id": "PHC-SHIVPUR",
+      "facility_name": "PHC Shivpur",
+      "medicine": "ORS",
+      "current_stock": 210,
+      "daily_consumption": 68,
+      "safety_stock": 220,
+      "expiry_date": "2026-11-15",
+      "history": [42, 45, 48, 50, 52, 55, 57, 59, 61, 63, 65, 67, 68, 70]
+    },
+    {
+      "facility_id": "PHC-SADAR",
+      "facility_name": "PHC Sadar",
+      "medicine": "Paracetamol",
+      "current_stock": 1450,
+      "daily_consumption": 180,
+      "safety_stock": 500,
+      "expiry_date": "2027-01-12",
+      "history": [130, 135, 138, 142, 145, 150, 153, 155, 160, 165, 170, 172, 176, 180]
+    },
+    {
+      "facility_id": "PHC-KOLAR",
+      "facility_name": "PHC Kolar",
+      "medicine": "Paracetamol",
+      "current_stock": 2600,
+      "daily_consumption": 120,
+      "safety_stock": 500,
+      "expiry_date": "2027-02-08",
+      "history": [110, 108, 112, 115, 118, 116, 120, 119, 121, 123, 122, 125, 126, 120]
+    },
+    {
+      "facility_id": "PHC-PINDRA",
+      "facility_name": "PHC Pindra",
+      "medicine": "IV Fluids",
+      "current_stock": 760,
+      "daily_consumption": 70,
+      "safety_stock": 250,
+      "expiry_date": "2026-10-30",
+      "history": [55, 57, 60, 61, 62, 64, 65, 66, 68, 67, 70, 69, 71, 70]
+    }
+  ],
+  "alerts": [
+    {
+      "id": "ALT-001",
+      "severity": "CRITICAL",
+      "status": "ACTIVE",
+      "facility": "PHC Shivpur",
+      "district": "Varanasi",
+      "state": "Uttar Pradesh",
+      "resource": "ORS",
+      "message": "Projected stock is below safety stock within 3 days.",
+      "created_at": "2026-09-15T18:20:00"
+    },
+    {
+      "id": "ALT-002",
+      "severity": "HIGH",
+      "status": "MONITORING",
+      "facility": "PHC Sadar",
+      "district": "Gorakhpur",
+      "state": "Uttar Pradesh",
+      "resource": "Beds",
+      "message": "Bed availability is critically low.",
+      "created_at": "2026-09-15T17:40:00"
+    }
+  ]
+}
